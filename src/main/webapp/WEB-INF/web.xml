@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+  <display-name>03 ShopCartProject</display-name>
+  
+  <listener>
+  <listener-class>com.listener.DAOContextListener</listener-class>
+  </listener>
+  
+<context-param>
+	<param-name>driver</param-name>                                             
+	<param-value>com.mysql.cj.jdbc.Driver</param-value>
+</context-param>
+
+<context-param>
+	<param-name>url</param-name>
+	<param-value>jdbc:mysql://localhost:3306/shopcart</param-value>
+</context-param>
+
+<context-param>
+	<param-name>username</param-name>
+	<param-value>root</param-value>
+</context-param>
+
+<context-param>
+	<param-name>password</param-name>
+	<param-value>Yash@2003</param-value>
+</context-param>
+
+<servlet>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>com.servlet.ControllerServlet</servlet-class>
+    <init-param>
+        <param-name>DAOClass</param-name>
+        <param-value>com.daoImpl.DAO</param-value>
+    </init-param>
+    <init-param>
+        <param-name>BLClass</param-name>
+        <param-value>com.serviceImpl.ServicesImpl</param-value>
+    </init-param>
+</servlet>
+
+
+ <servlet-mapping>
+	<servlet-name>ControllerServlet</servlet-name>
+	<url-pattern>/ControllerServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>AddToCartServlet</servlet-name>
+    <servlet-class>com.servlet.AddToCartServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AddToCartServlet</servlet-name>
+    <url-pattern>/AddToCartServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>BuyNowServlet</servlet-name>
+    <servlet-class>com.servlet.BuyNowServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>BuyNowServlet</servlet-name>
+    <url-pattern>/BuyNowServlet</url-pattern>
+</servlet-mapping>
+
+
+
+ <!-- Update Cart Servlet -->
+  <servlet>
+    <servlet-name>UpdateCartServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateCartServlet</servlet-name>
+    <url-pattern>/UpdateCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Remove from Cart Servlet -->
+  <servlet>
+    <servlet-name>RemoveFromCartServlet</servlet-name>
+    <servlet-class>com.servlet.RemoveFromCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RemoveFromCartServlet</servlet-name>
+    <url-pattern>/RemoveFromCartServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ==================== PAYMENT SERVLETS ==================== -->
+  
+  <!-- Payment Servlet -->
+  <servlet>
+    <servlet-name>PaymentServlet</servlet-name>
+    <servlet-class>com.servlet.PaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>PaymentServlet</servlet-name>
+    <url-pattern>/PaymentServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- Checkout Servlet -->
+<servlet>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <servlet-class>com.servlet.CheckoutServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <url-pattern>/CheckoutServlet</url-pattern>
+</servlet-mapping>
+  
+  
+  <!-- Process Payment Servlet -->
+  <servlet>
+    <servlet-name>ProcessPaymentServlet</servlet-name>
+    <servlet-class>com.servlet.ProcessPaymentServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ProcessPaymentServlet</servlet-name>
+    <url-pattern>/ProcessPaymentServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ==================== LOGOUT SERVLET ==================== -->
+  
+  <!-- Logout Servlet -->
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ==================== ADMIN SERVLETS ==================== -->
+  
+  <!-- Add Product Servlet -->
+  <servlet>
+    <servlet-name>AddProductServlet</servlet-name>
+    <servlet-class>com.servlet.AddProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AddProductServlet</servlet-name>
+    <url-pattern>/admin/AddProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Admin Products Servlet -->
+  <servlet>
+    <servlet-name>AdminProductsServlet</servlet-name>
+    <servlet-class>com.servlet.AdminProductsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>AdminProductsServlet</servlet-name>
+    <url-pattern>/admin/products</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Delete Product Servlet -->
+  <servlet>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteProductServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DeleteProductServlet</servlet-name>
+    <url-pattern>/admin/DeleteProductServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Update Order Status Servlet -->
+  <servlet>
+    <servlet-name>UpdateOrderStatusServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateOrderStatusServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateOrderStatusServlet</servlet-name>
+    <url-pattern>/admin/UpdateOrderStatusServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Cancel Order Servlet -->
+  <servlet>
+    <servlet-name>CancelOrderServlet</servlet-name>
+    <servlet-class>com.servlet.CancelOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>CancelOrderServlet</servlet-name>
+    <url-pattern>/CancelOrderServlet</url-pattern>
+  </servlet-mapping> 
+  
+  <!-- Update Product Servlet -->
+<servlet>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateProductServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateProductServlet</servlet-name>
+    <url-pattern>/admin/UpdateProductServlet</url-pattern>
+</servlet-mapping>
+
+<!-- View Users Servlet -->
+<servlet>
+    <servlet-name>ViewUsersServlet</servlet-name>
+    <servlet-class>com.servlet.ViewUsersServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ViewUsersServlet</servlet-name>
+    <url-pattern>/admin/users</url-pattern>
+</servlet-mapping>
+
+
+<!-- View Orders Servlet -->
+<servlet>
+    <servlet-name>ViewOrdersServlet</servlet-name>
+    <servlet-class>com.servlet.ViewOrdersServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ViewOrdersServlet</servlet-name>
+    <url-pattern>/admin/orders</url-pattern>
+</servlet-mapping>
+
+
+<!-- User Management Servlet -->
+<servlet>
+    <servlet-name>UserManagementServlet</servlet-name>
+    <servlet-class>com.servlet.UserManagementServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UserManagementServlet</servlet-name>
+    <url-pattern>/admin/UserManagementServlet</url-pattern>
+</servlet-mapping>
+
+
+<welcome-file-list>
+	<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+
+
+</web-app>
