@@ -158,6 +158,9 @@ JAR File	Location	Purpose
 mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 
 
+
+
+
 ## 📹 Project Demo Video
 
 <p align="center">
@@ -167,8 +170,10 @@ mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 </p>
 
 <p align="center">
-  <i>Click the image or button above to view the complete project demonstration on Google Drive</i>
+  <i>Click the button above to view the complete project demonstration on Google Drive</i>
 </p>
+
+
 
 
 
