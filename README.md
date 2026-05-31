@@ -167,12 +167,6 @@ mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 </p>
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing" target="_blank">
-    <img src="https://via.placeholder.com/800x450/1e293b/ffffff?text=Click+to+Watch+ShopCart+Demo" alt="ShopCart Project Demo Thumbnail" width="80%">
-  </a>
-</p>
-
-<p align="center">
   <i>Click the image or button above to view the complete project demonstration on Google Drive</i>
 </p>
 
