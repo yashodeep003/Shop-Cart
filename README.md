@@ -160,7 +160,7 @@ mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 
 ## 🎬 Project Demonstration
 
-[![Watch Demo]([https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube](https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing))](https://drive.google.com/your-drive-link)
+[![Watch Demo]([https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube](https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing))]([https://drive.google.com/your-drive-link](https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing))
 
 > Click the badge above to access the project demonstration video
 
