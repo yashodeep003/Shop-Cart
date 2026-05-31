@@ -80,6 +80,20 @@ Feature	Implementation
 
 
 
+## 📹 Project Demo Video
+
+<p align="center">
+  <a href="https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/▶️_Watch_Demo_on_Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Demo">
+  </a>
+</p>
+
+<p align="center">
+  <i>Click the button above to view the complete project demonstration on Google Drive</i>
+</p>
+
+
+
 # 📖 Description
 Project Overview
 ShopCart is a complete e-commerce solution that simulates an online shopping experience. The application consists of two main modules:
@@ -161,94 +175,14 @@ mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 
 
 
-## 📹 Project Demo Video
-
-<p align="center">
-  <a href="https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing" target="_blank">
-    <img src="https://img.shields.io/badge/▶️_Watch_Demo_on_Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Demo">
-  </a>
-</p>
-
-<p align="center">
-  <i>Click the button above to view the complete project demonstration on Google Drive</i>
-</p>
 
 
 
-
-
-
-
-# 📥 How to Clone Repository
-Prerequisites
-Before cloning, ensure you have:
-
-Git installed on your system
-
-JDK 17+ installed
-
-Apache Tomcat 10.1+ installed
-
-MySQL 8.0+ installed and running
-
-Step 1: Clone the Repository
-bash
-# Clone the project
-git clone https://github.com/yourusername/ShopCartProjectDemo.git
-
-# Navigate to project directory
-cd ShopCartProjectDemo
-Step 2: Import into Eclipse
-bash
-# Open Eclipse IDE
-# File → Import → Existing Projects into Workspace
-# Select the project folder
-# Click Finish
-Step 3: Configure Database
-sql
--- Create database (run in MySQL)
-CREATE DATABASE shopcart;
-USE shopcart;
-
--- Copy and run all table creation scripts from the project
--- (Tables: user, product, orders, order_items, cart)
-Step 4: Update Database Credentials
-Edit web.xml (located in WebContent/WEB-INF/):
-
-xml
-<context-param>
-    <param-name>username</param-name>
-    <param-value>your_mysql_username</param-value>
-</context-param>
-<context-param>
-    <param-name>password</param-name>
-    <param-value>your_mysql_password</param-value>
-</context-param>
-Step 5: Add MySQL Connector JAR
-bash
-# Download mysql-connector-j-8.0.33.jar
-# Copy to WebContent/WEB-INF/lib/
-# Right-click project → Build Path → Configure Build Path → Add JARs
-Step 6: Configure Tomcat Server
-bash
-# In Eclipse: Window → Preferences → Server → Runtime Environments
-# Add → Apache Tomcat 10.1
-# Point to Tomcat installation directory
-# Finish
-Step 7: Run the Application
-bash
-# Right-click on project → Run As → Run on Server
-# Select Tomcat server
-# Access at: http://localhost:8080/ShopCartProjectDemo/signIn.jsp
-Default Credentials
-Role	Username	Password
-Admin	Admin	Admin123
-Customer	(Register new)	(Set during registration)
 
 
 
 👨‍💻 Author
-Your Name
+Yashodeep Badge
 
 Email: yashodeepbadge190@gmail.com
 
