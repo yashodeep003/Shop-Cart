@@ -157,6 +157,14 @@ JAR File	Location	Purpose
 
 mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 
+## 🎬 Project Demonstration
+
+[![ShopCart - E-Commerce Web Application Demo](https://img.youtube.com/vi/abc123xyz/0.jpg)](https://www.youtube.com/watch?v=abc123xyz)
+
+
+
+
+
 
 
 # 📥 How to Clone Repository
