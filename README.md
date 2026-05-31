@@ -158,12 +158,23 @@ JAR File	Location	Purpose
 mysql-connector-j-8.0.33.jar	/WEB-INF/lib/	MySQL JDBC connectivity
 
 
-## 🎬 Project Demonstration
+## 📹 Project Demo Video
 
-[![Watch Demo]([https://img.shields.io/badge/Watch-Demo_Video-red?style=for-the-badge&logo=youtube](https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing))]([https://drive.google.com/your-drive-link](https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing))
+<p align="center">
+  <a href="https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing" target="_blank">
+    <img src="https://img.shields.io/badge/▶️_Watch_Demo_on_Google_Drive-4285F4?style=for-the-badge&logo=googledrive&logoColor=white" alt="Watch Demo">
+  </a>
+</p>
 
-> Click the badge above to access the project demonstration video
+<p align="center">
+  <a href="https://drive.google.com/file/d/1-Zmz61CmS0OH6u1I9x9PhxEp4Du0Usmv/view?usp=sharing" target="_blank">
+    <img src="https://via.placeholder.com/800x450/1e293b/ffffff?text=Click+to+Watch+ShopCart+Demo" alt="ShopCart Project Demo Thumbnail" width="80%">
+  </a>
+</p>
 
+<p align="center">
+  <i>Click the image or button above to view the complete project demonstration on Google Drive</i>
+</p>
 
 
 
